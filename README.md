@@ -30,6 +30,7 @@ These are average-intensity-weighted, attributional operational estimates under 
 - `literature/`: structured review protocol and authoritative source matrix.
 - `bibliography/`: verified BibTeX and CSV records.
 - `figures/`: the two journal figures at 2800 pixels wide and 400 dpi.
+- `manuscripts/`: editable and rendered copies of the two alternative journal manuscripts, plus Applied Energy highlights and declaration files.
 - `DATA_AND_LICENCE.md`: source provenance and NESO licence information.
 - `SHA256SUMS.txt`: SHA-256 hashes for every other file in this archive.
 
