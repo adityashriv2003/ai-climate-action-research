@@ -1,0 +1,119 @@
+{
+  "forecast": {
+    "selected_model": "HistGradientBoosting",
+    "comparator": "ValidationSelectedBaseline",
+    "estimand": "paired reduction in MAE, comparator minus selected",
+    "resampling_unit": "UTC issue day",
+    "primary_bootstrap": "7-day circular moving blocks",
+    "bootstrap_assumption": "approximately stationary ordered daily contrasts within this fitted model and retrospective period; circular blocks wrap the December boundary to July",
+    "sensitivity_bootstraps": [
+      "1-day IID blocks",
+      "14-day circular moving blocks",
+      "21-day circular moving blocks",
+      "28-day circular moving blocks"
+    ],
+    "n_days": 183,
+    "mean_reduction_gCO2_per_kWh": 5.432069247833377,
+    "monthly_mean_reduction_gCO2_per_kWh": {
+      "2024-07": 7.315898981812905,
+      "2024-08": -10.869688633996523,
+      "2024-09": 6.73272636765431,
+      "2024-10": 14.542095718572265,
+      "2024-11": 9.195449185467703,
+      "2024-12": 5.852863923393317
+    },
+    "ci1d_low": 3.092522780853779,
+    "ci1d_high": 7.797562427796493,
+    "ci7d_low": 1.3711247691455357,
+    "ci7d_high": 9.138438591063805,
+    "ci14d_low": 0.4071658446112442,
+    "ci14d_high": 9.747997010698493,
+    "ci21d_low": -0.24116111604306376,
+    "ci21d_high": 10.008164106273654,
+    "ci28d_low": -0.4200274360982283,
+    "ci28d_high": 10.201394892207986,
+    "bootstrap_replicates": 5000,
+    "comparator_selection": "lowest validation MAE independently at each of the 48 horizons among Persistence, DailySeasonal, WeeklySeasonal and Climatology",
+    "selected_baseline_counts": {
+      "Persistence": 31,
+      "DailySeasonal": 17,
+      "WeeklySeasonal": 0,
+      "Climatology": 0
+    }
+  },
+  "scheduling": {
+    "configuration": "1 kWh, 3 h contiguous job in 12 h window from 18:00 UTC",
+    "selected_model": "HistGradientBoosting",
+    "selected_non_ml_scheduler": "Climatology",
+    "non_ml_selection_rule": "lowest mean assigned emissions in the primary configuration on validation data only; deterministic alphabetical tie-break",
+    "validation_non_ml_means_g_for_1kWh_job": {
+      "Persistence": 147.82116104868913,
+      "DailySeasonal": 111.78745318352058,
+      "WeeklySeasonal": 113.72097378277152,
+      "Climatology": 108.61610486891385
+    },
+    "validation_paired_days": 178,
+    "n_paired_days": 183,
+    "primary_comparison": {
+      "comparator": "Climatology",
+      "estimand": "comparator minus selected ML; positive favors ML",
+      "mean_difference_g_for_1kWh_job": -1.2249544626593807,
+      "percent_of_comparator_mean": -1.2135155862317861,
+      "ci1d_low": -2.4392987249544618,
+      "ci1d_high": -0.04551457194899842,
+      "ci7d_low": -2.711475409836065,
+      "ci7d_high": 0.16227231329690125,
+      "ci14d_low": -2.9007969034608365,
+      "ci14d_high": 0.19683515482695588,
+      "ci21d_low": -2.974521857923497,
+      "ci21d_high": 0.18315118397085423,
+      "ci28d_low": -3.0000455373406187,
+      "ci28d_high": 0.2550318761384328
+    },
+    "secondary_comparison": {
+      "comparator": "Immediate start",
+      "estimand": "comparator minus selected ML; positive favors ML",
+      "mean_difference_g_for_1kWh_job": 49.80510018214935,
+      "percent_of_comparator_mean": 32.77240420457132,
+      "ci1d_low": 44.96152094717668,
+      "ci1d_high": 54.58943533697631,
+      "ci7d_low": 44.16452641165756,
+      "ci7d_high": 55.310610200364295,
+      "ci14d_low": 43.27249544626594,
+      "ci14d_high": 56.40803734061931,
+      "ci21d_low": 42.69831511839709,
+      "ci21d_high": 56.62891621129326,
+      "ci28d_low": 42.722472677595626,
+      "ci28d_high": 56.463683970856096
+    },
+    "exploratory_daily_comparison": {
+      "comparator": "DailySeasonal",
+      "estimand": "comparator minus selected ML; positive favors ML",
+      "mean_difference_g_for_1kWh_job": 2.5719489981785064,
+      "percent_of_comparator_mean": 2.455566762895203,
+      "ci1d_low": 0.5755464480874323,
+      "ci1d_high": 4.759631147540983,
+      "ci7d_low": 0.6475409836065584,
+      "ci7d_high": 4.449931693989071,
+      "ci14d_low": 0.737591074681239,
+      "ci14d_high": 4.329804189435333,
+      "ci21d_low": 0.8184653916211287,
+      "ci21d_high": 4.210496357012747,
+      "ci28d_low": 0.9251821493624766,
+      "ci28d_high": 4.116666666666666
+    },
+    "bootstrap": {
+      "replicates": 5000,
+      "primary": "7-day circular moving block, ordered by UTC issue date",
+      "assumption": "approximately stationary ordered daily contrasts within this fitted model and retrospective period; circular blocks wrap the December boundary to July",
+      "sensitivities": [
+        "1-day IID block",
+        "14-day circular moving block",
+        "21-day circular moving block",
+        "28-day circular moving block"
+      ]
+    },
+    "configuration_sensitivity_artifact": "scheduling_sensitivity_contrasts.csv"
+  },
+  "seed": 20240906
+}

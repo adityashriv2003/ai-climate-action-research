@@ -1,0 +1,52 @@
+{
+  "source_url": "https://api.neso.energy/dataset/f406810a-1a36-48d2-b542-1dfb1348096e/resource/0e5fde43-2de7-4fb4-833d-c7bca3b658b0/download/gb_carbon_intensity.csv",
+  "dataset_page": "https://www.neso.energy/data-portal/national-carbon-intensity-forecast/national_carbon_intensity_forecast",
+  "ckan_resource_id": "0e5fde43-2de7-4fb4-833d-c7bca3b658b0",
+  "dataset_metadata_modified_utc": "2026-09-05T21:10:38.004341",
+  "retrieved_at_utc": "2026-09-05T21:42Z",
+  "license_id": "ESO",
+  "license_title": "NESO Open Data Licence",
+  "license_url": "https://www.neso.energy/data-portal/ngeso-open-licence",
+  "input_file": "data/gb_carbon_intensity.csv",
+  "input_sha256": "428476b2bab40d690f38309dd6eebe6e276631d570071785e5311f7ef45b6283",
+  "source_rows": 153595,
+  "source_first_timestamp_utc": "2018-01-01T00:00:00+00:00",
+  "source_last_timestamp_utc": "2026-10-05T21:00:00+00:00",
+  "yearly": [
+    {
+      "year": 2022,
+      "expected_half_hours": 17520,
+      "records_after_reindex": 17520,
+      "actual_missing": 51,
+      "actual_available": 17469,
+      "actual_mean_gCO2_per_kWh": 182.5490297097716
+    },
+    {
+      "year": 2023,
+      "expected_half_hours": 17520,
+      "records_after_reindex": 17520,
+      "actual_missing": 1537,
+      "actual_available": 15983,
+      "actual_mean_gCO2_per_kWh": 152.95576550084465
+    },
+    {
+      "year": 2024,
+      "expected_half_hours": 17568,
+      "records_after_reindex": 17568,
+      "actual_missing": 31,
+      "actual_available": 17537,
+      "actual_mean_gCO2_per_kWh": 125.11900553116268
+    }
+  ],
+  "training_missingness": {
+    "missing_half_hours": 1588,
+    "contiguous_run_count": 5,
+    "largest_contiguous_run": {
+      "start_utc": "2023-03-06T14:30:00+00:00",
+      "end_utc_inclusive": "2023-04-05T14:30:00+00:00",
+      "half_hours": 1441
+    }
+  },
+  "forecast_column_used": false,
+  "forecast_exclusion_reason": "The CSV has no forecast issue timestamp; treating its historical value as a fixed-horizon, as-issued forecast would therefore introduce temporal ambiguity."
+}

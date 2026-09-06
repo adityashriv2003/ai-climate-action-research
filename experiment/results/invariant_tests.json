@@ -1,0 +1,21 @@
+{
+  "all_analogue_offsets_nonnegative": true,
+  "validation_targets_after_train": true,
+  "validation_issues_after_train_cutoff": true,
+  "validation_origins_have_full_24h_room": true,
+  "test_targets_after_validation": true,
+  "test_issues_after_validation_cutoff": true,
+  "test_origins_have_full_24h_room": true,
+  "test_targets_before_2025": true,
+  "constant_trace_tie_breaks_to_earliest": true,
+  "zero_slack_has_only_immediate_start": true,
+  "one_kWh_constant_trace_is_work_conserving": true,
+  "all_strategies_have_paired_day_counts": true,
+  "test_issue_days_are_complete_horizon_cohorts": true,
+  "all_tests_passed": true,
+  "decision_time_is_interval_after_issue_label": true,
+  "target_period_never_starts_before_decision": true,
+  "model_selection_reproduced_from_validation_only": true,
+  "forecast_baseline_selected_from_validation_only": true,
+  "scheduling_baseline_selected_from_validation_only": true
+}

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility supplement, please cite the accompanying journal manuscript."
+title: "Forecast Accuracy and Decision Value in Carbon-Aware Scheduling: Reproducibility Supplement"
+type: software
+authors:
+  - family-names: Shrivastava
+    given-names: Aditya
+    email: adityashrivastava2003@gmail.com
+date-released: "2026-09-06"
+repository-code: "https://github.com/adityashriv2003/ai-climate-action-research"
+url: "https://github.com/adityashriv2003/ai-climate-action-research"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Shrivastava
+      given-names: Aditya
+      email: adityashrivastava2003@gmail.com
+  title: "Forecast Accuracy and Decision Value in Carbon-Aware Scheduling"
+  year: 2026
