@@ -1,16 +1,24 @@
 # Forecast accuracy and decision value in carbon-aware scheduling
 
+## Submission status
+
+The manuscript **“Forecast Accuracy Versus Decision Value in Carbon-Aware Computing: A Reproducible Trace Replay”** was submitted to *Sustainable Computing: Informatics and Systems* in September 2026.
+
+- **Corresponding author:** Prof. Fernando Moreira
+- **Co-authors:** Aditya Shrivastava; Nishtha Jatana; Shaily Malik; Sachinandan Mohanty
+- **Status:** Submitted manuscript
+
 ## Reproducibility supplement
 
-This archive supports two alternative, journal-formatted versions of the same empirical study:
+This archive contains two presentations of the same empirical study:
 
-1. **Applied Energy:** “Forecast accuracy does not guarantee carbon-aware scheduling value: A Great Britain trace replay.”
-2. **IEEE Transactions on Sustainable Computing:** “Forecast Accuracy Versus Decision Value in Carbon-Aware Computing: A Reproducible Trace Replay.”
+1. **Alternative Applied Energy format:** “Forecast accuracy does not guarantee carbon-aware scheduling value: A Great Britain trace replay.”
+2. **Submitted manuscript:** “Forecast Accuracy Versus Decision Value in Carbon-Aware Computing: A Reproducible Trace Replay.”
 
-The versions are alternatives and must not be submitted concurrently. This supplement contains the common evidence and computation; it intentionally excludes obsolete or duplicate manuscript copies.
+Only the second manuscript has been submitted. The Applied Energy-formatted version is retained as an alternative presentation and is not under concurrent consideration. This supplement contains the common evidence and computation; it intentionally excludes obsolete or duplicate manuscript copies.
 
-- **Author:** Aditya Shrivastava
-- **Affiliation:** Independent Researcher
+- **Repository maintainer:** Aditya Shrivastava
+- **Maintainer affiliation:** Independent Researcher
 - **Contact:** adityashrivastava2003@gmail.com
 - **Public repository:** <https://github.com/adityashriv2003/ai-climate-action-research>
 
@@ -56,8 +64,8 @@ The archived NESO finalized estimates are treated as available at the next half-
 
 **Funding:** This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
 
-**Competing interests:** The author declares no competing financial or non-financial interests.
+**Competing interests:** The authors declare no competing financial or non-financial interests.
 
-The named human author must personally verify the complete analysis and sources, approve the submitted version, and accept accountability for the work.
+The named authors must personally verify the complete analysis and sources, approve the submitted version, and accept accountability for the work.
 
 This package has not undergone external peer review.
