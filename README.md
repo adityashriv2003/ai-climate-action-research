@@ -18,7 +18,6 @@ This archive contains two presentations of the same empirical study:
 Only the second manuscript has been submitted. The Applied Energy-formatted version is retained as an alternative presentation and is not under concurrent consideration. This supplement contains the common evidence and computation; it intentionally excludes obsolete or duplicate manuscript copies.
 
 - **Repository maintainer:** Aditya Shrivastava
-- **Maintainer affiliation:** Independent Researcher
 - **Contact:** adityashrivastava2003@gmail.com
 - **Public repository:** <https://github.com/adityashriv2003/ai-climate-action-research>
 
